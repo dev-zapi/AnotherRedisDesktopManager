@@ -166,6 +166,8 @@ const en = {
     close_right: 'Close Right Tabs',
     close_other: 'Close Other Tabs',
     slow_log: 'Slow Query',
+    custom_css: 'Custom CSS',
+    custom_css_placeholder: '请输入文件路径',
   },
 };
 

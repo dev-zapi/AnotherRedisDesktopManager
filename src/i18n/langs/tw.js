@@ -166,6 +166,8 @@ const tw = {
     close_right: '關閉右側標籤',
     close_other: '關閉其他標籤',
     slow_log: '慢查詢',
+    custom_css: '自定義樣式',
+    custom_css_placeholder: '请输入文件路径',
   },
 };
 

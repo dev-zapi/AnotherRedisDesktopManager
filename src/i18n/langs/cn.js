@@ -166,6 +166,8 @@ const cn = {
     close_right: '关闭右侧标签',
     close_other: '关闭其他标签',
     slow_log: '慢查询',
+    custom_css: '自定义样式',
+    custom_css_placeholder: '请输入文件路径',
   },
 };
 
