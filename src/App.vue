@@ -29,6 +29,22 @@
 import Aside from '@/Aside';
 import Tabs from '@/components/Tabs';
 import UpdateCheck from '@/components/UpdateCheck';
+import customCssLoader from './customCssLoader';
+
+const injectStylesheet = (src) => {
+  customCssLoader.loadCustomCss(src);
+  customCssLoader.onCustomCssLoaded((content) => {
+    let styleElement = document.getElementById('custom-css');
+    if (!styleElement) {
+      styleElement = document.createElement('style');
+      styleElement.id = 'custom-css';
+      document.head.append(styleElement);
+    }
+    styleElement.innerHTML = content;
+  }, (code, message) => {
+    alert(message || code);
+  });
+};
 
 export default {
   name: 'App',
@@ -96,6 +112,7 @@ export default {
     reloadSettings() {
       this.initFont();
       this.initZoom();
+      this.loadCustomCss();
     },
     initFont() {
       const fontFamily = this.$storage.getFontFamily();
@@ -109,6 +126,12 @@ export default {
 
       const {webFrame} = require('electron');
       webFrame.setZoomFactor(zoomFactor);
+    },
+    loadCustomCss() {
+      const customCss = this.$storage.getCustomCss();
+      if (customCss) {
+        injectStylesheet(customCss);
+      }
     },
   },
   mounted() {
