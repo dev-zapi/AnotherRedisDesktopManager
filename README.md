@@ -63,6 +63,7 @@
 
 ## Feature Log
 
+- 2023-06-22: Export\Import keys support
 - 2023-05-26: Search support in Stream && Slow log support
 - 2023-04-01: Search support in List && Deflate raw support
 - 2022-10-07: Arrow Keys support in key list && Memory Analysis in folder
@@ -225,6 +226,19 @@ This project exists thanks to all the people who contribute.
 | ------ | ------ |
 | `/bin/bash` | `/home/qii/shell_decoder.sh {VALUE}` |
 | `/bin/node` | `/home/qii/node_decoder.js {HEX} --key={KEY}` |
+
+
+## FAQ
+
+#### 1. How to connect to Redis Cluster in internal network (such as Docker, LAN, AWS)?
+   
+   Answer: Connect via `SSH+Cluster` (SSH to the internal network and then connecting to Cluster with internal IP such as `127.0.0.1`, `192.168.x.x`), you need to fill Redis Host with the internal IP.
+   
+   How to get Redis internal IP? Connect through SSH, uncheck Cluster option, and then open the console to execute `CLUSTER NODES`, select any IP in the result.
+
+#### 2. Do I need to fill in the 'Username' in the Redis configuration?
+   
+   Answer: The access control list (ACL) is only supported in `Redis>=6.0`, so do not fill it unless you need a special user.
 
 
 ## License

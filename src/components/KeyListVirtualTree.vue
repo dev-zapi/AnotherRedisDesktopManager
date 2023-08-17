@@ -400,7 +400,7 @@ export default {
         this.$refs.veTree.setCheckedLeafKeys(this.checkedKeys);
 
         // little keys such as extract search, expand all
-        if (newListCopy.length <= 10) {
+        if (newListCopy.length <= 20) {
           this.$refs.veTree.setExpandAll(true);
         }
       });
@@ -413,6 +413,9 @@ export default {
 </script>
 
 <style>
+.key-list-vtree {
+  height: calc(100vh - 250px);
+}
 /*vtree container*/
 .key-list-vtree .vue-recycle-scroller {
   width: calc(100% + 2px);
