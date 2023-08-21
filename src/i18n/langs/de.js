@@ -166,6 +166,8 @@ const de = {
     close_right: 'Schließen Sie die rechten Registerkarten',
     close_other: 'Schließen Sie andere Registerkarten',
     slow_log: 'Langsame Abfrage',
+    custom_css: '自定义样式',
+    custom_css_placeholder: '请输入文件路径',
   },
 };
 

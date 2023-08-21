@@ -166,6 +166,8 @@ const pt = {
     close_right: 'Fechar abas direitas',
     close_other: 'Fechar outras guias',
     slow_log: 'Consulta lenta',
+    custom_css: '自定义样式',
+    custom_css_placeholder: '请输入文件路径',
   },
 };
 

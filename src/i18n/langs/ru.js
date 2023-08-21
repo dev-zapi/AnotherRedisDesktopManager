@@ -166,6 +166,8 @@ const ru = {
     close_right: 'Закрыть правые вкладки',
     close_other: 'Закрыть другие вкладки',
     slow_log: 'Медленный запрос',
+    custom_css: '自定义样式',
+    custom_css_placeholder: '请输入文件路径',
   },
 };
 

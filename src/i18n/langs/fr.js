@@ -166,6 +166,8 @@ const fr = {
     close_right: 'Fermer les onglets de droite',
     close_other: 'Fermer les autres onglets',
     slow_log: 'Requête lente',
+    custom_css: '自定义样式',
+    custom_css_placeholder: '请输入文件路径',
   },
 };
 

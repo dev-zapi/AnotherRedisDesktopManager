@@ -166,6 +166,8 @@ const it = {
     close_right: 'Chiudi le schede a destra',
     close_other: 'Chiudi altre schede',
     slow_log: 'Interrogazione lenta',
+    custom_css: '自定义样式',
+    custom_css_placeholder: '请输入文件路径',
   },
 };
 

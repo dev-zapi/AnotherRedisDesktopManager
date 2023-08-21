@@ -166,6 +166,8 @@ const tr = {
     close_right: 'Sağ Sekmeleri Kapat',
     close_other: 'Diğer Sekmeleri Kapat',
     slow_log: 'Yavaş Sorgu',
+    custom_css: '自定义样式',
+    custom_css_placeholder: '请输入文件路径',
   },
 };
 
